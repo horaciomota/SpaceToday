@@ -10,13 +10,43 @@ import SwiftUI
 struct regularNewView: View {
     var body: some View {
         
-        VStack (alignment: .leading){
+        ScrollView {
             
-            Text("Virgin Galactic completes third commercial SpaceShipTwo flight")
-            Text("By Sejao foguetes - 6 horas atras")
+            VStack (alignment: .leading) {
+                
+                Rectangle()
+                    .frame(width: 400, height: 250)
+                
+                    Text("Virgin Galactic completes third commercial SpaceShipTwo flight")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                    
+                    Text("By Sejao foguetes - 6 horas atras")
+                        .padding(.top)
+                        .font(.subheadline)
+                        .fontWeight(.medium)
+                        .foregroundColor(.gray)
+            }
             
             
-            
+            HStack {
+                VStack (alignment: .leading){
+                    Text("Virgin Galactic completes third commercial SpaceShipTwo flight")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                    
+                    Text("By Sejao foguetes - 6 horas atras")
+                        .padding(.top)
+                        .font(.subheadline)
+                        .fontWeight(.medium)
+                        .foregroundColor(.gray)
+                }
+                .frame(maxWidth: 260)
+                
+                Rectangle()
+                    .frame(width: 120, height: 100)
+                
+            }
         }
         
 

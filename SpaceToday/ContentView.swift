@@ -15,10 +15,7 @@ struct ContentView: View {
         
         NavigationView() {
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
+                regularNewView()
             }
             .navigationTitle("Headline")
             .searchable(text: $searchableItens, prompt: "Search News by topic...")
